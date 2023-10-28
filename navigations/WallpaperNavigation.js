@@ -6,7 +6,12 @@ const Stack = createNativeStackNavigator();
 
 const WallpaperNavigation = () => {
   return (
-    <Stack.Navigator initialRouteName="WallpapersTab">
+    <Stack.Navigator
+      initialRouteName="WallpapersTab"
+      screenOptions={{
+        headerStyle: { backgroundColor: 'teal' },
+        headerTitleStyle: { color: 'white' },
+      }}>
       <Stack.Screen
         name="WallpapersTab"
         component={WallpaperListScreen}
