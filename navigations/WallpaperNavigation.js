@@ -10,7 +10,7 @@ const WallpaperNavigation = () => {
       initialRouteName="WallpapersTab"
       screenOptions={{
         headerStyle: { backgroundColor: 'teal' },
-        headerTitleStyle: { color: 'white' },
+        headerTintColor: 'white',
       }}>
       <Stack.Screen
         name="WallpapersTab"
