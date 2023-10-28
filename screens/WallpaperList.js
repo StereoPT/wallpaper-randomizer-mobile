@@ -39,7 +39,7 @@ export default WallpaperList = ({ navigation }) => {
             )}
             keyExtractor={(item) => item.url}
           />
-          <FloatingButton text="+" onPress={() => handleChooseWallpaper()} />
+          <FloatingButton onPress={() => handleChooseWallpaper()} />
         </View>
       )}
     </View>

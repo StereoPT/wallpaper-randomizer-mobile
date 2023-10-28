@@ -1,9 +1,10 @@
-import { Pressable, Text, StyleSheet } from 'react-native';
+import { Pressable, StyleSheet } from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
-export default FloatingButton = ({ text, onPress }) => {
+export default FloatingButton = ({ onPress }) => {
   return (
     <Pressable style={styles.ButtonWrapper} onPress={onPress}>
-      <Text style={styles.ButtonText}>{text}</Text>
+      <Feather name="plus" size={32} color="white" />
     </Pressable>
   );
 };
@@ -22,10 +23,5 @@ const styles = StyleSheet.create({
     height: 64,
     borderRadius: 32,
     backgroundColor: 'teal',
-  },
-  ButtonText: {
-    fontSize: 36,
-    lineHeight: 42,
-    color: 'white',
   },
 });
