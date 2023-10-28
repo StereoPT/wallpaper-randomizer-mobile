@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import WallpaperList from '../screens/WallpaperList';
-import ChoosenWallpaper from '../screens/ChoosenWallpaper';
+import WallpaperListScreen from '../screens/WallpaperListScreen';
+import ChosenWallpaper from '../screens/ChosenWallpaper';
 
 const Stack = createNativeStackNavigator();
 
@@ -9,12 +9,12 @@ const WallpaperNavigation = () => {
     <Stack.Navigator initialRouteName="WallpapersTab">
       <Stack.Screen
         name="WallpapersTab"
-        component={WallpaperList}
+        component={WallpaperListScreen}
         options={{ title: 'Wallpapers' }}
       />
       <Stack.Screen
-        name="ChoosenWallpaperTab"
-        component={ChoosenWallpaper}
+        name="ChosenWallpaperTab"
+        component={ChosenWallpaper}
         options={{ title: 'Choosen Wallpaper' }}
       />
     </Stack.Navigator>

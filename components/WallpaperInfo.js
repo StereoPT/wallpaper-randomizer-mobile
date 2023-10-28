@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { Image } from 'expo-image';
 
 const InfoLine = ({ label, text }) => {
   return (
@@ -20,10 +21,11 @@ export default WallpaperInfo = ({ wallpaper }) => {
       <InfoLine label="SubReddit" text={wallpaper.subreddit} />
       <View style={styles.WallpaperImageContainer}>
         <Image
-          source={{ uri: wallpaper.url }}
-          width={400}
-          height={400}
-          resizeMode="center"
+          source={wallpaper.url}
+          width={350}
+          height={600}
+          contentFit="contain"
+          transition={1000}
         />
       </View>
     </View>

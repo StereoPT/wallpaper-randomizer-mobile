@@ -5,7 +5,7 @@ import { useRoute } from '@react-navigation/native';
 import WallpaperInfo from '../components/WallpaperInfo';
 import WallpaperManager from '@ajaybhatia/react-native-wallpaper-manager';
 
-export default ChoosenWallpaper = () => {
+export default ChosenWallpaper = () => {
   const route = useRoute();
   const { wallpaper } = route.params;
 
